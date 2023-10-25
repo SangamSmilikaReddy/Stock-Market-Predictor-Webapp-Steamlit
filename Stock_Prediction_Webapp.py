@@ -123,7 +123,7 @@ data_testing = pd.DataFrame(data['Close'][int(len(data)*0.70) : int(len(data))])
 scaler = MinMaxScaler(feature_range=(0,1))
 data_training_array = scaler.fit_transform(data_training)
 
-model = load_model('C:/Users/Smilika/Documents/ML Mini project/keras_model.h5')
+model = load_model('keras_model.h5')
 
 
 past_4_days = data_training.tail(4) 
